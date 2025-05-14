@@ -1,0 +1,45 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pkl
+*.ipynb_checkpoints/
+*.env
+*.venv/
+.venv/
+env/
+venv/
+
+# === Jupyter Notebooks ===
+.ipynb_checkpoints
+
+# === Streamlit ===
+.streamlit/secrets.toml
+
+# === Archivos sensibles y configuraciones ===
+.env
+*.key
+*.pem
+*.sqlite3
+*.db
+
+# === Logs y cachés ===
+*.log
+*.cache
+*.tmp
+
+# === Archivos del sistema ===
+.DS_Store
+Thumbs.db
+
+# === VS Code / IDE ===
+.vscode/
+.idea/
+*.code-workspace
+
+# === Datos grandes (opcionales) ===
+/*.csv
+/data/
+datasets/
