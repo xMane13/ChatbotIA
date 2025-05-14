@@ -32,7 +32,7 @@ if st.button("Preguntar a la IA"):
             df_string = casas.to_string(index=False)
             try:
                 response = openai.chat.completions.create(
-                    model="gpt-3.5-turbo",
+                    model="gpt-4",
                     messages=[
                         {"role": "system", "content": "Eres un analista turístico y de datos. Responde basándote en:\n" + df_string},
                         {"role": "user", "content": user_question}
