@@ -34,7 +34,7 @@ if st.button("Preguntar a la IA"):
                 response = openai.chat.completions.create(
                     model="gpt-4",
                     messages=[
-                        {"role": "system", "content": "Eres un analista turístico y de datos. Responde basándote en:\n" + df_string},
+                        {"role": "system", "content": "Eres un analista turístico y de datos. Solo responde las preguntas basandote en los datos proporcionados, no respondas ninguna otra pregunta que no tenga que ver con el dataset Responde basándote en:\n" + df_string},
                         {"role": "user", "content": user_question}
                     ]
                 )
